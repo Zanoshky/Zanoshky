@@ -37,7 +37,7 @@
 <p align="center">
   <picture>
     <source media="(max-width: 600px)" srcset="assets/contact-narrow.svg">
-    <img src="assets/contact.svg" width="830" alt="Let's build something. Got an idea, a product that needs finishing, or just want to say hello? The inbox is open: zanoski.marko@gmail.com">
+    <img src="assets/contact.svg" width="830" alt="Let's build something. Got an idea, a product that needs finishing, or just want to say hello? The inbox is open: marko@zanoski.com">
   </picture>
 </p>
 
@@ -45,5 +45,5 @@
   <a href="https://zanoski.com"><img src="assets/key-site.svg" height="46" alt="zanoski.com"></a>
   <a href="https://gitlab.com/Zanoshky"><img src="assets/key-gitlab.svg" height="46" alt="GitLab"></a>
   <a href="https://www.linkedin.com/in/zanoski/"><img src="assets/key-linkedin.svg" height="46" alt="LinkedIn"></a>
-  <a href="mailto:zanoski.marko@gmail.com"><img src="assets/key-mail.svg" height="46" alt="Email"></a>
+  <a href="mailto:marko@zanoski.com"><img src="assets/key-mail.svg" height="46" alt="Email"></a>
 </p>

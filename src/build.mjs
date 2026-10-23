@@ -948,7 +948,7 @@ function key(label, { lit, glyph = "↗", w } = {}) {
 
 function footer({ narrow }) {
   const W = narrow ? 400 : 830;
-  const s = new Svg(W, narrow ? 196 : 150, { fs: narrow ? 12.5 : 14, title: "Contact: Let's build something. Got an idea, a product that needs finishing, or just want to say hello? The inbox is open. zanoski.marko@gmail.com" });
+  const s = new Svg(W, narrow ? 196 : 150, { fs: narrow ? 12.5 : 14, title: "Contact: Let's build something. Got an idea, a product that needs finishing, or just want to say hello? The inbox is open. marko@zanoski.com" });
   const { cw, ch } = s;
   const close = screen(s);
   s.add(rain(s, { density: 0.3, seed: 31 }));
@@ -962,7 +962,7 @@ function footer({ narrow }) {
     : ["Got an idea, a product that needs finishing, or just want to say hello?", "The inbox is open."];
   for (const l of body) { s.add(s.text(36, y, l, C.fg)); y += ch * 1.2; }
   y += 6;
-  const mail = "zanoski.marko@gmail.com";
+  const mail = "marko@zanoski.com";
   s.add(s.text(36, y, "❯", C.acc, { bold: true }) + s.text(36 + 2 * cw, y, mail, C.br, { bold: true }));
   s.add(`<rect class="cur" x="${f1(36 + (mail.length + 3) * cw)}" y="${f1(y + 1)}" width="${f1(cw)}" height="${f1(ch - 2)}" fill="${C.acc}"/>`);
   close();
