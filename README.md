@@ -24,7 +24,7 @@
 </p>
 
 <p align="center">
-  <sub>Most of my code lives on <a href="https://gitlab.com/Zanoshky">GitLab</a>. Firewall is open source <a href="https://github.com/Zanoshky/android-firewall">right here</a>, and it is on <a href="https://play.google.com/store/apps/details?id=com.zanoshky.firewall">Google Play</a> with <a href="https://play.google.com/store/apps/details?id=com.zanoshky.runskellybonrun">Run Skellybon Run</a>.</sub>
+  <sub>Most of my code lives on <a href="https://gitlab.com/Zanoshky">GitLab</a>. <a href="https://play.google.com/store/apps/details?id=com.zanoshky.firewall">Firewall</a> is on Google Play with <a href="https://play.google.com/store/apps/details?id=com.zanoshky.runskellybonrun">Run Skellybon Run</a>.</sub>
 </p>
 
 <p align="center">
