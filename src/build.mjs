@@ -747,7 +747,7 @@ function whoami({ narrow, H: HH }) {
     ["base", "Zagreb, Croatia"],
     ["work", "I design, build and run small, fast", "products from start to finish."],
     ["stack", "Kotlin · Go · TypeScript · React", "Next.js · NestJS · Unity"],
-    ["apps", "11 live, 2 on Google Play"],
+    ["apps", "11 on Google Play"],
     ["site", "zanoski.com"],
     ["code", "most of it lives on gitlab.com/Zanoshky"],
   ];
@@ -757,7 +757,7 @@ function whoami({ narrow, H: HH }) {
   const W = narrow ? 400 : 830;
   const logoN = narrow ? 13 : 15;
   const H = narrow ? 120 + logoN * 10 + (lines + 5) * probe.ch * 1.3 : 64 + Math.max(logoN * 2 * probe.ch * 0.5, (lines + 4) * probe.ch * 1.3) + 26;
-  const s = new Svg(W, Math.round(HH || H), { fs, title: "whoami: Marko Zanoški, software architect and digital craftsman in Zagreb, Croatia. Stack: Kotlin, Go, TypeScript, React, Next.js, NestJS, Unity. 11 live apps, 2 on Google Play. Site zanoski.com, most code on gitlab.com/Zanoshky." });
+  const s = new Svg(W, Math.round(HH || H), { fs, title: "whoami: Marko Zanoški, software architect and digital craftsman in Zagreb, Croatia. Stack: Kotlin, Go, TypeScript, React, Next.js, NestJS, Unity. 11 apps on Google Play. Site zanoski.com, most code on gitlab.com/Zanoshky." });
   const { cw, ch } = s;
   const close = screen(s);
   s.add(rain(s, { density: 0.3, seed: 8 }));
@@ -818,7 +818,7 @@ const CARDS = [
   {
     id: "phosphor", name: "Phosphor", tag: "android", domain: "phosphor.zanoski.com",
     tagline: "A terminal launcher for Android",
-    facts: ["5 layouts, 14 themes", "A lock screen to match", "Coming soon to Google Play"],
+    facts: ["5 layouts, 14 themes", "A lock screen to match", "On Google Play"],
     stack: "kotlin · one character grid", icon: "phosphor.png",
   },
   {
@@ -830,7 +830,7 @@ const CARDS = [
   {
     id: "firewall", name: "Firewall", tag: "android", domain: "firewall.zanoski.com",
     tagline: "Block a domain in every app",
-    facts: ["Android, no root needed", "Free and open source", "No ads, no tracking"],
+    facts: ["Android, no root needed", "Phones and Android TV", "No ads, no tracking"],
     stack: "local vpn · dns over https", icon: "firewall.png",
   },
   {
@@ -948,7 +948,7 @@ function key(label, { lit, glyph = "↗", w } = {}) {
 
 function footer({ narrow }) {
   const W = narrow ? 400 : 830;
-  const s = new Svg(W, narrow ? 196 : 150, { fs: narrow ? 12.5 : 14, title: "Contact: Let's build something. Got an idea, a product that needs finishing, or just want to say hello? The inbox is open. marko@zanoski.com" });
+  const s = new Svg(W, narrow ? 196 : 150, { fs: narrow ? 12.5 : 14, title: "Contact: Let's build something. Got an idea, a product that needs finishing, or just want to say hello? The inbox is open. support@zanoski.com" });
   const { cw, ch } = s;
   const close = screen(s);
   s.add(rain(s, { density: 0.3, seed: 31 }));
@@ -962,7 +962,7 @@ function footer({ narrow }) {
     : ["Got an idea, a product that needs finishing, or just want to say hello?", "The inbox is open."];
   for (const l of body) { s.add(s.text(36, y, l, C.fg)); y += ch * 1.2; }
   y += 6;
-  const mail = "marko@zanoski.com";
+  const mail = "support@zanoski.com";
   s.add(s.text(36, y, "❯", C.acc, { bold: true }) + s.text(36 + 2 * cw, y, mail, C.br, { bold: true }));
   s.add(`<rect class="cur" x="${f1(36 + (mail.length + 3) * cw)}" y="${f1(y + 1)}" width="${f1(cw)}" height="${f1(ch - 2)}" fill="${C.acc}"/>`);
   close();
